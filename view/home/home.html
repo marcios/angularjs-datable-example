@@ -1,0 +1,29 @@
+<table id="example" class="display table table-bordered" dt-data-table cellspacing="0" width="100%">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Cidade</th>
+            <th>Endereço</th>
+            <th>&nbsp;</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th>Nome</th>
+            <th>Cidade</th>
+            <th>Endereço</th>
+            <th>&nbsp;</th>
+
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr ng-repeat="item in ctrl.list">
+            <td>{{item.nome}}</td>
+            <td>{{item.cidade}}</td>
+            <td>{{item.endereco}}</td>
+            <td><a ui-sref="detalhe({item})">Detalhe</a></td>
+
+        </tr>
+
+    </tbody>
+</table>
